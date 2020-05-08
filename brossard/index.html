@@ -8,17 +8,42 @@
         <meta name="description" content="Reproduction du site de la Ville de Brossard, en html/css.">
         <meta name="keywords" content="Ville de Brossard Reproduction">
 
-        <link rel="stylesheet" href=""  >   /* versus src? */
         <link rel="styleshhet" href="css/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="icon" href="imgs/favicon.ico">
+        
     </head>
     <body>
         <header>
-            <div class="connexion">
-                <div class="column"></div>
-                <div class="column"></div>
-                <div class="column"></div>
-                <div class="column" id="connexion"></div>
+            <!-- Bandeau de connexion -->    
+            <!-- <?php include '/templates/header.html'; ?> -->
+
+            <div class="bandeau" id="connexion">
+                <div class="column"><span class="material-icons">search</span></div>
+                <div class="column"><span class="material-icons">format_size</span></div>
+                <div class="column"><span class="material-icons">language</span></div>
+                <div class="column" id="connexion-btn"><span class="material-icons">person</span><span>Connexion</span></div>
+            </div>
+
+            <!-- Bandeau de navigation -->    
+            <!-- <?php include 'templates/navigation.html'; ?> -->
+            <div class="bandeau" id="navigation">
+                <div class="column">
+                    <a href="/" title="Retourner à la page d'accueil">
+                        <img src="imgs/logo.png" alt="Logo de la Ville de Brossard." />
+                    </a>    
+                </div>
+                <div class="column">Services</div>
+                <div class="column">Vie municipale</div>
+                <div class="column">Loisir et culture</div>
+                <div class="column"><a href="https://bibliotheque.brossard.ca/" target="_blank" title="Accéder au site de la bibliothèque" >Bibliothèque</a></div>
+                <div class="column"><a href="#" title="Accéder à la carte interactive">Carte interactive</a></div>
+                <div class="column" id="covid-nav"><a href="#" title="Accéder aux dernières nouvelles portant sur la Covid-19" ></a>Covid-19</div>
+            </div>
+
+            <!-- Bandeau d'annonce d'urgence -->
+            <div class="bandeau" id="covid">
+                <span>Les lingettes c'est dans la poubelle, pas dans la toilette! Risque élevé de bris d'aqueduc</span>
             </div>
         </header>
 
@@ -27,7 +52,7 @@
         </main>
 
         <footer>
-
+            <!-- <?php include 'templates/footer.html'; ?> -->
         </footer>
     </body>
 </html>
