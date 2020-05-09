@@ -10,24 +10,25 @@
 
         <link rel="styleshhet" href="css/styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="imgs/favicon.ico">
         
     </head>
     <body>
-        <header>
+        <header class="sticky"> <!-- class essentiel? -->
             <!-- Bandeau de connexion -->    
             <!-- <?php include '/templates/header.html'; ?> -->
 
-            <div class="bandeau" id="connexion">
+            <div class="container" id="connexion">
                 <div class="column"><span class="material-icons">search</span></div>
                 <div class="column"><span class="material-icons">format_size</span></div>
                 <div class="column"><span class="material-icons">language</span></div>
-                <div class="column" id="connexion-btn"><span class="material-icons">person</span><span>Connexion</span></div>
+                <div class="column" id="connexion-btn"><span class="material-icons">account_circle</span><span>Connexion</span></div>
             </div>
 
             <!-- Bandeau de navigation -->    
             <!-- <?php include 'templates/navigation.html'; ?> -->
-            <div class="bandeau" id="navigation">
+            <div class="container" id="navigation">
                 <div class="column">
                     <a href="/" title="Retourner à la page d'accueil">
                         <img src="imgs/logo.png" alt="Logo de la Ville de Brossard." />
@@ -38,17 +39,109 @@
                 <div class="column">Loisir et culture</div>
                 <div class="column"><a href="https://bibliotheque.brossard.ca/" target="_blank" title="Accéder au site de la bibliothèque" >Bibliothèque</a></div>
                 <div class="column"><a href="#" title="Accéder à la carte interactive">Carte interactive</a></div>
-                <div class="column" id="covid-nav"><a href="#" title="Accéder aux dernières nouvelles portant sur la Covid-19" ></a>Covid-19</div>
-            </div>
-
-            <!-- Bandeau d'annonce d'urgence -->
-            <div class="bandeau" id="covid">
-                <span>Les lingettes c'est dans la poubelle, pas dans la toilette! Risque élevé de bris d'aqueduc</span>
+                <div class="column" id="covid-nav"><a href="#" title="Accéder aux dernières nouvelles portant sur la Covid-19" >Covid-19</a></div>
             </div>
         </header>
 
         <main>
+            <!-- Bandeau d'annonce d'urgence -->
+            <div class="container" id="covid">
+                <span>Les lingettes c'est dans la poubelle, pas dans la toilette! Risque élevé de bris d'aqueduc</span>
+            </div>
 
+            <!-- Bannière (image) -->
+            <div>
+                <img src="imgs/banniere-accueil.jpg" />
+                <div>
+                    <p><span class="uppercase">Covid-19</span> : suivez la situation</p>
+                </div>
+                <div class="social-media">
+                    <div class="column"><a href="https://www.facebook.com/VilleBrossard" target="_blank" title="Facebook" ><span class="social-media fa fa-facebook"></span></a></div>
+                    <div class="column"><a href="https://twitter.com/Ville_brossard" target="_blank" title="Twitter" ><span class="social-media fa fa-twitter"></span></a></div>
+                    <div class="column"><a href="https://www.instagram.com/villebrossard/" target="_blank" title="Instagram" ><span class="social-media fa fa-instagram"></span></a></div>
+                    <div class="column"><a href="https://www.linkedin.com/company/3056219?trk=tyah&trkInfo=tarId%3A1412871355741%2Ctas%3Aville%20de%20brossa%2Cidx%3A1-1-1" target="_blank" title="LinkedIn" ><span class="social-media fa fa-linkedin"></span></a></div>
+                    <div class="column"><a href="https://www.youtube.com/channel/UCb7WCk6Cx9JPxCesBM3CWbQ/feed?view_as=public" target="_blank" title="Youtube" ><span class="social-media fa fa-youtube-play"></span></a></div>
+                    <div class="column"><a href="#" target="_blank" title="Services Brossard" ><span class="social-media fa fa-envelope-o" aria-hidden="true">Contact</span></a></div> <!-- Diffère de celle du site parce que gratuite -->
+                </div>
+            </div>
+
+            <!-- Espace personnel, non connecté -->
+            <div class="container" id="space">
+                <h1>Mon<br><span class="padding-h1">espace</span></h1>
+                <div>
+                    <p class="default-alt">Connectez-vous à votre espace personnel et découvrez un espace spécialement conçu pour vous, selon votre secteur et les intérêts que vous choisirez.</p>
+                    <hr class="top alt">
+                    <div><a href="#" title="Accéder à votre espace personnel" >Connexion<span class="fa fa-angle-right"></span></a></div>
+                </div>
+            </div>
+
+            <!-- Mes services en ligne -->
+            <section>
+                <div class="container" id="services">
+                    <h1>Mes services<br><span class="padding-h1">en ligne</span></h1>
+                    <hr class="bottom">
+                    <button class="button">
+                        <a href="#" target="" title="" >
+                            <span class="button"></span> <!-- ajouter l'icone -->
+                            <p class="button"><strong>Abonnez-vous aux avis par texto</strong></p>
+                        </a>
+                    </button>
+                    <button class="button">
+                        <a href="#" target="" title="" >
+                            <span class="button"></span> <!-- ajouter l'icone -->
+                            <p class="button"><strong>On répond à vos questions</strong></p>
+                        </a>
+                    </button>
+                    <button class="button">
+                        <a href="#" target="" title="" >
+                            <span class="button"></span> <!-- ajouter l'icone -->
+                            <p class="button"><strong>Vos nouvelles mensuelles</strong>Abonnez-vous à l'infolettre</p>
+                        </a>
+                    </button>
+                    <button class="button">
+                        <a href="#" target="" title="" >
+                            <span class="button"></span> <!-- ajouter l'icone -->
+                            <p class="button">Profitez des <strong>ressources numériques</strong> de la bibliothèque</p>    
+                        </a>
+                    </button>
+                    <button class="button">
+                        <a href="#" target="" title="" >
+                            <span class="button"></span>  <!-- ajouter l'icone -->
+                            <p class="button">Connaissez-vous la valeur de votre demeure?</p>
+                        </a>
+                    </button>
+                    <button class="button">
+                        <a href="#" target="" title="" >
+                            <span class="button"></span>  <!-- ajouter l'icone -->
+                            <p class="button">Transmettez la lecture de votre compteur d'eau</p>
+                        </a>
+                    </button>
+                    <button class="button">
+                        <a href="#" target="" title="" >
+                            <span class="button"></span>  <!-- ajouter l'icone -->
+                            <p class="button">Des rénos? <strong>Avez-vous votre permis?</strong></p>
+                        </a>
+                    </button>
+                    <button class="button">
+                        <a href="#" target="" title="" >
+                            <span class="button"></span>  <!-- ajouter l'icône -->
+                            <p class="button"><span class="uppercase"><strong>Emplois</strong></span>Faites carrière à Brossard</p>
+                        </a>
+                    </button>
+                    <button class="button">
+                        <a href="#" target="" title="" >
+                            <span class="button"></span>  <!-- ajouter l'icône -->
+                            <p class="button">Achetez la licence de votre animal</p>
+                        </a>
+                    </button>
+                    <button class="button">
+                        <a href="https://bciti.brossard.ca/web/#/accueil" target="_blank" title="Accès au site de bciti Brossard" >
+                            <img src="imgs/logo_bciti.png" alt="Logo de bciti">  
+                            <p class="button">Inscrivez-vous ou connectez-vous à bciti</p>
+                        </a>
+                    </button>
+                </div>
+            </section>
         </main>
 
         <footer>
